@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import ExampleComponent from 'surprise-santa'
 
 export default class App extends Component {
