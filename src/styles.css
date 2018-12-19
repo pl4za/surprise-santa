@@ -1,7 +1,5 @@
 :root {
   --animation-time: 0s;
-  --from: -20%;
-  --to: 100%;
   --animation: santa-move-right;
 }
 
@@ -11,23 +9,23 @@ Animates from left to right
 */
 @keyframes santa-move-right {
     from {
-        left: -20%;
-        top: var(--from);
+        left: -40%;
+        bottom: -3%;
     }
     to {
         left: 120%;
-        top: var(--to);
+        bottom: -3%;
     }
 }
 
 @keyframes santa-move-left {
   from {
-      right: -20%;
-      top: var(--from);
+      right: -40%;
+      bottom: -3%;
   }
   to {
       right: 120%;
-      top: var(--to);
+      bottom: -3%;
   }
 }
 
@@ -42,7 +40,24 @@ Animates from left to right
 
 .santa {
   animation: var(--animation) var(--animation-time) linear normal 1;
-  background-color: red;
   position: fixed;
   display: none;
+}
+
+.left {
+  -moz-transform: 'scaleX(1)';
+  -o-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  filter: '';
+  -ms-filter: '';
+}
+
+.right {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }

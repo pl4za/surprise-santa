@@ -1,36 +1,39 @@
 import React, { Component } from 'react'
 import './styles.css'
+import santa from './santa'
 
 export default class ExampleComponent extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
+    this.state = {
+      currentAnimation: 'santa-move-right'
+    };
   }
 
   componentDidMount = () => {
     let getRandomNumber = (min, max) => Math.random() * (max - min) + min;
-    let currentAnimation = 'santa-move-right';
-    let updateCurrentAnimation = () => currentAnimation === 'santa-move-right' ?
-      currentAnimation = 'santa-move-left' : currentAnimation = 'santa-move-right';
+    let updateCurrentAnimation = () => this.state.currentAnimation === 'santa-move-right' ?
+    this.setState({currentAnimation: 'santa-move-left'}) : this.setState({currentAnimation: 'santa-move-right'});
 
     let time = 5;
     let animate = () => {
       let santa = document.querySelector('.santa');
       santa.style.display = 'block';
-      santa.style.setProperty('--animation', currentAnimation);
-      santa.style.setProperty('--from', getRandomNumber(0, 100) + '%');
-      santa.style.setProperty('--to', getRandomNumber(0, 100) + '%');
+      santa.style.setProperty('--animation', this.state.currentAnimation);
       santa.style.setProperty('--animation-time', time + 's');
       updateCurrentAnimation();
       setTimeout(() => santa.style.display = 'none', time * 1000);
     };
 
-    setInterval(animate, getRandomNumber(time, 10) * 1000);
+    setInterval(animate, getRandomNumber(60, 200) * 1000);
   }
 
   render() {
     return (
-      <div className="santa">HOLA</div>
+      <div className={this.state.currentAnimation === 'santa-move-left' ? 'santa left' : 'santa right'}>
+        <img src={santa} />
+      </div>
     );
   }
 }
