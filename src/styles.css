@@ -3,8 +3,13 @@
         left: 0;
     }
     to {
-        left: 50%;
+        left: 100%;
     }
+}
+
+:root {
+  --animation-time: 5s;
+  --zero-pos: 0;
 }
 
 @keyframes flicker {
@@ -17,6 +22,9 @@
 }
 
 .santa {
-  animation: flicker 2s ease alternate infinite;
+  animation: santa-move var(--animation-time) linear normal infinite;
   background-color: red;
+  position: absolute;
+  top: var(--zero-pos);
+  left: var(--zero-pos);
 }
