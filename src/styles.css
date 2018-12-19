@@ -1,8 +1,22 @@
-/* add css styles here (optional) */
+@keyframes santa-move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.santa {
+  animation: flicker 2s ease alternate infinite;
+  background-color: red;
 }

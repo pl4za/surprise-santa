@@ -1,22 +1,17 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-import styles from './styles.css'
+import './styles.css'
 
 export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
+
+  constructor(props) {
+    super(props)
   }
 
   render() {
-    const {
-      text
-    } = this.props
-
     return (
-      <div className={styles.test}>
-        Super Secret Santa: {text}
+      <div>
+        <div className="santa">HOLA</div>
       </div>
-    )
+    );
   }
 }
