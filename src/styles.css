@@ -1,15 +1,22 @@
-@keyframes santa-move {
+:root {
+  --animation-time: 0s;
+  --from-top-pos: 0;
+  --to-top-pos: 100%;
+}
+
+/*
+Animates from left to right
+  Change values for --from-top-pos and --to-top-pos
+*/
+@keyframes santa-move-right {
     from {
         left: 0;
+        top: var(--from-top-pos);
     }
     to {
         left: 100%;
+        top: var(--to-top-pos);
     }
-}
-
-:root {
-  --animation-time: 5s;
-  --zero-pos: 0;
 }
 
 @keyframes flicker {
@@ -22,9 +29,9 @@
 }
 
 .santa {
-  animation: santa-move var(--animation-time) linear normal infinite;
+  animation: santa-move-right var(--animation-time) linear normal infinite;
   background-color: red;
   position: absolute;
-  top: var(--zero-pos);
-  left: var(--zero-pos);
+  top: var(--from-top-pos);
+  left: 0;
 }
