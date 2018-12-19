@@ -1,6 +1,6 @@
 :root {
   --animation-time: 0s;
-  --from: 0;
+  --from: -20%;
   --to: 100%;
   --animation: santa-move-right;
 }
@@ -41,7 +41,8 @@ Animates from left to right
 }
 
 .santa {
-  animation: var(--animation) var(--animation-time) linear normal infinite;
+  animation: var(--animation) var(--animation-time) linear normal 1;
   background-color: red;
   position: fixed;
+  display: none;
 }
