@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import './styles.css'
-import santa from './santa'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import './styles.css';
+import santa from './santa';
 
-export default class ExampleComponent extends Component {
+export default class SurpriseSanta extends Component {
 
   constructor(props) {
     super(props);
@@ -26,7 +27,7 @@ export default class ExampleComponent extends Component {
       setTimeout(() => santa.style.display = 'none', time * 1000);
     };
 
-    setInterval(animate, getRandomNumber(60, 200) * 1000);
+    setInterval(animate, getRandomNumber(this.props.minTime || 60, this.props.maxTime || 120) * 1000);
   }
 
   render() {
@@ -37,3 +38,8 @@ export default class ExampleComponent extends Component {
     );
   }
 }
+
+SurpriseSanta.propTypes = {
+  minTime: PropTypes.number,
+  maxTime: PropTypes.number
+};

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import ExampleComponent from 'surprise-santa'
+import SurpriseSanta from 'surprise-santa'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <SurpriseSanta minTime={5} maxTime={60}/>
       </div>
     )
   }
