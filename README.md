@@ -1,7 +1,9 @@
 # Surprise Santa
 
 OH OH OH ! A secret surprise santa for your react projects. 
-This idea came up after looking for ways of adding some christmas spirit to our team's monitoring dashboards. [Here's an exmaple of it in action](https://www.youtube.com/watch?v=ZSL6RNKKUN4)
+This idea came up after looking for ways of adding some christmas spirit to our team's monitoring dashboards. 
+[Here's an example of it in action](https://www.youtube.com/watch?v=ZSL6RNKKUN4)
+
 ![Surprise Santa](https://media.giphy.com/media/BLxLU06aayd0K5EWa9/giphy.gif)
 
 ## Installation
