@@ -7,16 +7,6 @@ This idea came up after looking for ways of adding some christmas spirit to our 
 ![Surprise Santa](https://media.giphy.com/media/DOG65BvYvpSHvdfYTC/giphy.gif)
 
 ## Installation
-
-Just reference the dependency in your package.json with:
-```
-"surprise-santa": "^1.0.1"
-```
-Or run the following NPM command:
-```
-npm surprise-santa@latest --save
-```
-Or if using YARN:
 ```
 yarn add surprise-santa@latest
 ```
@@ -33,17 +23,32 @@ And place it in the root of your main component.
 You can also define the minimum and maximum time between animations:
 
 ```
-<SurpriseSanta minTime={5} maxTime={10} />
+<SurpriseSanta minTime={5} maxTime={30} />
 ```
 
 ### See example in action
 
 ```
-yarn install
-cd examples
+yarn build
+cd example
 yarn install
 yarn start
 ```
+
+### Editing the npm module
+
+Inside the main module:
+```
+yarn build
+yarn link
+```
+
+Then inside the example project:
+```
+yarn link "surprise-santa"
+yarn start
+```
+
 ![Example Santa](https://github.com/pl4za/surprise-santa/blob/65b1abe02cea376b0633388128ea572b55bc8e4d/src/example.jpg)
 
 ## Built With

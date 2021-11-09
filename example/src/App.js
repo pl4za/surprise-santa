@@ -7,7 +7,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <SurpriseSanta minTime={5} maxTime={60} />
+        <SurpriseSanta minTime={5} maxTime={30} />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           Merry 0 Christmas!

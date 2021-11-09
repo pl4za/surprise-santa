@@ -1,6 +1,6 @@
 {
   "name": "surprise-santa",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Add a super secret santa to your projects!",
   "author": "pl4za",
   "license": "MIT",
@@ -19,6 +19,8 @@
     "christmas"
   ],
   "scripts": {
+    "link-module": "yarn unlink && yarn link && yarn --cwd 'example/' link 'surprise-santa'",
+    "start-all": "yarn link-module && yarn build && yarn --cwd 'example/' install && yarn --cwd 'example/' start",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",

@@ -10,22 +10,22 @@ Animates from left to right
 @keyframes santa-move-right {
     from {
         left: -40%;
-        bottom: -5%;
+        bottom: -2%;
     }
     to {
         left: 120%;
-        bottom: -5%;
+        bottom: -2%;
     }
 }
 
 @keyframes santa-move-left {
   from {
       right: -40%;
-      bottom: -5%;
+      bottom: -2%;
   }
   to {
       right: 120%;
-      bottom: -5%;
+      bottom: -2%;
   }
 }
 
