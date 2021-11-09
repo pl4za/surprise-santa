@@ -26,30 +26,12 @@ You can also define the minimum and maximum time between animations:
 <SurpriseSanta minTime={5} maxTime={30} />
 ```
 
-### See example in action
-
+### Running example project
+In order to link the module to the example project, and see changes in real time, you can run:
 ```
-yarn build
-cd example
-yarn install
-yarn start
+yarn start-all
 ```
-
-### Editing the npm module
-
-Inside the main module:
-```
-yarn build
-yarn link
-```
-
-Then inside the example project:
-```
-yarn link "surprise-santa"
-yarn start
-```
-
-![Example Santa](https://github.com/pl4za/surprise-santa/blob/65b1abe02cea376b0633388128ea572b55bc8e4d/src/example.jpg)
+![Example Santa](https://media.giphy.com/media/W9PjYdvRPq7n8QLi57/giphy.gif)
 
 ## Built With
 
