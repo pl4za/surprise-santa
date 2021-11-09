@@ -9,7 +9,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
-    "surprise-santa": "link:.."
+    "surprise-santa": "file:.."
   },
   "scripts": {
     "start": "react-scripts start",

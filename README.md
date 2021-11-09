@@ -1,7 +1,7 @@
 # Surprise Santa
 
-OH OH OH ! A secret surprise santa for your react projects. 
-This idea came up after looking for ways of adding some christmas spirit to our team's monitoring dashboards. 
+OH OH OH ! A secret surprise santa for your react projects.
+This idea came up after looking for ways of adding some christmas spirit to our team's monitoring dashboards.
 [Here's an example of it in action](https://www.youtube.com/watch?v=ZSL6RNKKUN4)
 
 ![Surprise Santa](https://media.giphy.com/media/DOG65BvYvpSHvdfYTC/giphy.gif)
@@ -34,6 +34,15 @@ You can also define the minimum and maximum time between animations:
 
 ```
 <SurpriseSanta minTime={5} maxTime={10} />
+```
+
+### See example in action
+
+```
+yarn install
+cd examples
+yarn install
+yarn start
 ```
 
 ## Built With
