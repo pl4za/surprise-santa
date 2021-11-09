@@ -44,6 +44,7 @@ cd examples
 yarn install
 yarn start
 ```
+![Example Santa](https://github.com/pl4za/surprise-santa/blob/65b1abe02cea376b0633388128ea572b55bc8e4d/src/example.jpg)
 
 ## Built With
 
